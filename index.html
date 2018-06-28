@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>TRAIN TIME</title>
+    <link rel= "stylesheet" href = "assets/css/reset.css" type = "text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel = "stylesheet" href="assets/css/style.css" type= "text/css"/>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <div class = "container">
+        <div class = "jumbotron text-center">
+            <h1>Train Time</h1>
+            <img src = "assets/images/choochoo.gif" alt = "CHOO CHOO"> 
+        </div>
+
+        <div class = "row">
+            <div class = "col-lg-4">
+                <form>
+                    <h3>Add Train</h3>
+                    Train Name <br>
+                    <input id = "trainname" type = "text" name = "trainname" placeholder="Amtrak" value=""><br>
+                    Destination <br>
+                    <input id = "destination" type = "text" name = "destination" placeholder="Portland" value = ""><br>
+                    First Train Time <br>
+                    <input id = "firsttraintime" type = "text" name = "firsttraintime" placeholder="HH:mm" value = ""><br>
+                    Frequency <br>
+                    <input id = "frequency" type = "text" name = "frequency" placeholder="5 minutes" value = ""><br>
+                    <br>
+                    <input id = "submittrain" type = "submit" value = "Submit">
+                </form>
+            </div>
+            
+            <div class = "col-lg-8">
+                <table>
+                    <h3>Current Train Schedule<h3>
+                    <thead>
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <br><br>
+
+
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
